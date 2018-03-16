@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代理商资格申请</title>
+<link href="/css/vendor.70de9bcf210e32a2bb9790b0b6f3b523.css" rel="stylesheet"></head>
+<body>
+    <div class="top">
+        <div class="tip" id="tipFit" style="display:none;">--</div>
+    </div>
+    <div class="cont">
+        <label class="contHead">代理商信息</label>
+        <form action="">
+            <div class="group">
+                <label>法人姓名<i>*</i></label>
+                <input type="text" placeholder="您的法人名称" id="legalPerson" maxlength="20" name="法人姓名" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onafterpaste="this.value=this.value.replace(/^ +| +$/g,'')">
+                <span class="err"></span>
+            </div>
+            <div class="group">
+                <label>身份证号<i>*</i></label>
+                <input type="text" placeholder="字母需大写" id="identityCard" maxlength="18">
+                <span class="err"></span>
+            </div>
+            <div class="group">
+                <label>证件有效期<i>*</i></label>
+                <input id="certificateValidPeriod" type="text" readonly="" placeholder="您的证件有效期" name="证件有效期" onfocus="this.blur();">
+                <span class="err"></span>
+            </div>
+            <div class="group">
+                <label>营业执照号<i>*</i></label>
+                <input type="text" placeholder="您的营业执照号" id="socialCreditCode" maxlength="20" name="营业执照号" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onafterpaste="this.value=this.value.replace(/^ +| +$/g,'')">
+                <span class="err"></span>
+            </div>
+        </form>
+        <div class="imgGroup">
+            <div class="imgBoxLeft">
+                <div class="pic1"></div>
+                <div class="font">营业执照示例</div>
+            </div>
+            <div class="imgBoxRight">
+                <form id="uploadForm1">
+                    <input id="businessLicense" type="file" accept="image/*" class="inputsty" name="imageFile">
+                </form>
+
+                <div class="upDateBox">
+                    <div class="showTip" id="blClick">
+                        <label>+</label>
+                        <span>添加营业执照</span>
+                    </div>
+                    <div class="showImg" style="display:none;">
+                        <div class="closeBtn" name="businessLicense"></div>
+                        <a class="example-image-link" href="" data-lightbox="example-set" data-title="营业执照">
+                            <img class="example-image" src="" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="imgGroup">
+            <div class="imgBoxLeft">
+                <div class="pic2"></div>
+                <div class="font">证件照正面示例</div>
+            </div>
+            <div class="imgBoxRight">
+                <form id="uploadForm2">
+                    <input id="corporateIdCard" type="file" accept="image/*" class="inputsty" name="imageFile">
+                </form>
+
+                <div class="upDateBox">
+                    <div class="showTip" id="cdfClick">
+                        <label>+</label>
+                        <span>添加证件照正面</span>
+                    </div>
+                    <div class="showImg" style="display:none;">
+                        <div class="closeBtn" name="corporateIdCard"></div>
+                        <a class="example-image-link" href="" data-lightbox="example-set" data-title="证件照正面">
+                            <img class="example-image" src="" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="imgGroup">
+            <div class="imgBoxLeft">
+                <div class="pic3"></div>
+                <div class="font">证件照反面示例</div>
+            </div>
+            <div class="imgBoxRight">
+                <form id="uploadForm3">
+                    <input id="corporateIdCardBack" type="file" accept="image/*" class="inputsty" name="imageFile">
+                </form>
+
+                <div class="upDateBox">
+                    <div class="showTip" id="cdbClick">
+                        <label>+</label>
+                        <span>添加证件照反面</span>
+                    </div>
+                    <div class="showImg" style="display:none;">
+                        <div class="closeBtn" name="corporateIdCardBack"></div>
+                        <a class="example-image-link" href="" data-lightbox="example-set" data-title="证件照反面">
+                            <img class="example-image" src="" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="imgGroup">
+            <div class="imgBoxLeft">
+                <div class="pic4"></div>
+                <div class="font">法人手持身份证正面示例</div>
+            </div>
+            <div class="imgBoxRight">
+                <form id="uploadForm4">
+                    <input id="corporateIdCardHold" type="file" accept="image/*" class="inputsty" name="imageFile">
+                </form>
+
+                <div class="upDateBox">
+                    <div class="showTip" id="cdhClick">
+                        <label>+</label>
+                        <span>添加法人手持身份证正面</span>
+                    </div>
+                    <div class="showImg" style="display:none;">
+                        <div class="closeBtn" name="corporateIdCardHold"></div>
+                        <a class="example-image-link" href="" data-lightbox="example-set" data-title="法人手持身份证正面">
+                            <img class="example-image" src="" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <input type="button" value="下一步" class="btn" id="contactInfoBtn" style="display:none;">
+        <input type="button" value="下一页" class="btn" id="contactInfoBtn1" style="display:none;">
+    </div>
+<script type="text/javascript" src="/js/vendor.268e36b8.js"></script><script type="text/javascript" src="/js/contactInfo.268e36b8.js"></script></body>
+</html>
